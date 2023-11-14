@@ -2,9 +2,9 @@ import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
 import Link from './Link'
-import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
-import SearchButton from './SearchButton'
+// import MobileNav from './MobileNav'
+// import ThemeSwitch from './ThemeSwitch'
+// import SearchButton from './SearchButton'
 
 const Header = () => {
   return (
@@ -12,16 +12,21 @@ const Header = () => {
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
-            <div className="mr-3">
+            <div className="mr-6">
               <Logo />
             </div>
-            {typeof siteMetadata.headerTitle === 'string' ? (
+            {/* {typeof siteMetadata.headerTitle === 'string' ? (
               <div className="hidden h-6 text-2xl font-semibold sm:block">
                 {siteMetadata.headerTitle}
               </div>
             ) : (
               siteMetadata.headerTitle
-            )}
+            )} */}
+            <div className="text-2xl font-semibold sm:block">
+              James Tennant's
+              <br />
+              Informal Blog
+            </div>
           </div>
         </Link>
       </div>
@@ -37,9 +42,9 @@ const Header = () => {
               {link.title}
             </Link>
           ))}
-        <SearchButton />
-        <ThemeSwitch />
-        <MobileNav />
+        {/* <SearchButton /> */}
+        {/* <ThemeSwitch /> */}
+        {/* <MobileNav /> */}
       </div>
     </header>
   )
