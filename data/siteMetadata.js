@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Informal Blog',
   author: 'James Tennant',
   headerTitle: "James Tennant's Informal Blog",
-  description: 'Some ideas',
+  description: 'Some unpolished ideas',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://blog.jorahty.com',
